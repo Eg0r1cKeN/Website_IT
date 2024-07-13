@@ -1,4 +1,21 @@
-h1{
-color: red;
+*{
+margin: 0;
+padding: 0;
 }
 
+html, body{
+height: 100%;
+}
+
+
+/* MAIN MENU */
+
+.header{
+    height: 140px;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+
+.main_menu{
+    display: flex;
+    justify-content: flex-end;
+}
