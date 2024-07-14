@@ -1,0 +1,95 @@
+{% extends 'layout.html' %}
+{% block main_page %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парки Москвы</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .park-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .park-item {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .park-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .park-item h3 {
+            margin-top: 10px;
+        }
+
+        .park-item p {
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Заповедники Москвы</h1>
+    </header>
+
+    <main>
+        <div class="park-list">
+            <div class="park-item">
+                <img src="https://avatars.mds.yandex.net/get-entity_search/5488405/806825166/S122x122Smart_2x" alt="Парк 1">
+                <h3>Битцевский лес</h3>
+                <p>Ясенево</p>
+            </div>
+            <div class="park-item">
+                <img src="https://rukivnogi.com/images/articles/1(423).jpg" alt="Парк 2">
+                <h3>Приокско-Террасный биосферный резерват</h3>
+                <p>Серпухов</p>
+            </div>
+            <div class="park-item">
+                <img src="https://rukivnogi.com/images/articles/1(424).jpg" alt="Парк 3">
+                <h3>Заповедник «Журавлиная родина»</h3>
+                <p>Сергиев-Посад</p>
+            </div>
+
+            </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Парки Москвы</p>
+    </footer>
+</body>
+</html>
+{% endblock main_page %}

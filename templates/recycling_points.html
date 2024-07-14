@@ -1,0 +1,94 @@
+{% extends 'layout.html' %}
+{% block main_page %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парки Москвы</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .park-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .park-item {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .park-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .park-item h3 {
+            margin-top: 10px;
+        }
+
+        .park-item p {
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Парки Москвы</h1>
+    </header>
+
+    <main>
+        <h2>Популярные парки</h2>
+        <div class="park-list">
+            <div class="park-item">
+                <img src="https://media.kudago.com/thumbs/m/images/list/9d/f0/9df0005bec9e065451bab9d8588d162c.jpg" alt="Парк 1">
+                <h3>Центральный округ</h3>
+                <p>Совсем рядом с Красной площадью находится контейнер для приёма отходов «Эколайн».</p>
+            </div>
+            <div class="park-item">
+                <img src="https://media.kudago.com/thumbs/m/images/list/11/ad/11ad794284392c3ebca3f2eeb751cf1e_12.jpg" alt="Парк 2">
+                <h3>Северный округ</h3>
+                <p>«Управление отходами» на Варшавском шоссе, д. 1 принимает на платную утилизацию все опасные отходы: медицинские, химические, промышленные, ртутьсодержащие лампы и градусники.</p>
+            </div>
+            <div class="park-item">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/e6/10/b4/alexander-garden-moscow.jpg?w=500&h=400&s=1" alt="Парк 3">
+                <h3>Северо-Восточный округ</h3>
+                <p>Напротив магазина «Карусель» на улице Санникова, 17 установлен пункт приёма «Хартии» для бумаги, стекла, пластика и металла.</p>
+            </div>
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Парки Москвы</p>
+    </footer>
+</body>
+</html>
+{% endblock main_page %}

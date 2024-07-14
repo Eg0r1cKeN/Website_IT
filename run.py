@@ -4,33 +4,25 @@ app = Flask(__name__)
 
 
 @app.route('/')
+@app.route('/home')
 def home():
     return render_template('index.html', title='Главная')
 
 
-@app.route('/html_page')
-def html_page():
-    return render_template("html_page.html")
+@app.route('/parks')
+def parks():
+    return render_template("parks.html")
 
-@app.route('/css_page')
-def css_page():
-    return render_template("css_page.html")
 
-@app.route('/django_page')
-def django_page():
-    return render_template("django_page.html")
+@app.route('/nature_reserves')
+def nature_reserves():
+    return render_template("nature_reserves.html")
 
-@app.route('/flask_page')
-def flask_page():
-    return render_template("flask_page.html")
 
-@app.route('/js_page')
-def js_page():
-    return render_template("js_page.html")
+@app.route('/recycling_points')
+def recycling_points():
+    return render_template("recycling_points.html")
 
-@app.route('/python_page')
-def python_page():
-    return render_template("python_page.html")
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
