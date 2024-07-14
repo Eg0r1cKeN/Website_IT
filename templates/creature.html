@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block main_page %}
+<head>
+    <meta charset="UTF-8">
+    <title>Создать пост</title>
+</head>
+<body>
+    <h1>Создать пост</h1>
+    <form method="POST">
+        <label for="title">Заголовок:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="content">Текст поста:</label>
+        <textarea id="content" name="content" required></textarea><br><br>
+
+        <button type="submit">Создать</button>
+    </form>
+</body>
+{% endblock main_page %}
