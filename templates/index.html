@@ -1,8 +1,27 @@
 {% extends 'layout.html' %}
 
 
+{% block main_page %}
 
-{% block content %}
+<div class="wrapper">
+    <div class="empty_block"></div>
 
+    <div class="info">
+        <div class="description">
+            <p class="names">Проведи время с пользой!</p>
 
-{% endblock content %}
+            <div class="desc">
+                <ul class="checkmark">
+                    <li><a href="{{ url_for('html_page') }}">Html</a></li>
+                    <li><a href="{{ url_for('css_page') }}">Css</a></li>
+                    <li><a href="{{ url_for('python_page') }}">Python</a></li>
+                    <li><a href="{{ url_for('js_page') }}">Java Script</a></li>
+                    <li><a href="{{ url_for('flask_page') }}">Flask</a></li>
+                    <li><a href="{{ url_for('django_page') }}">Django</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock main_page %}
