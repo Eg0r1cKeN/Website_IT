@@ -23,6 +23,10 @@ def nature_reserves():
 def recycling_points():
     return render_template("recycling_points.html")
 
+@app.route('/registration')
+def registration():
+    return render_template("registration.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
